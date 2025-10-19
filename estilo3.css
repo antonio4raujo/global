@@ -1,0 +1,183 @@
+
+:root{
+    --vermelho-escuro: #D00000;
+    --amarelo-vivo: #FFB703;
+    --cinza-escuro: #252A33;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --cinza-claro: #D9D9D9;
+    --fonte-text: "Geologica", sans-serif;
+}
+body{
+  font-family: var(--fonte-text);
+    background-image: url(imags/fundo-valores\ \(1\).png);
+    background-size: cover;
+  background-position: center;
+}
+#topo{
+  min-width: 188.83px;
+  background-color: var(--cinza-escuro);
+  padding: 5px 5px;
+}
+.grid-topo{
+    font-family: var(--fonte-text);
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr; 
+}
+#meu-topo{
+  grid-column: 3/4;
+}
+.grid-topo > h2{
+   grid-column: 2/3;
+   font-size: 32px;
+   font-weight: 900;
+   text-align: center;
+   color: #FFFFFF;
+   margin-top: 40px;
+  align-self:center;
+}
+#menu-topo > ul{
+  display:flex;
+  list-style: none; 
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+#matri{
+   display: inline-block;
+  background-color:var(--vermelho-escuro); 
+  color: white;
+  text-decoration: none;
+  padding: 12px 35px;
+  border-radius: 40px;
+  font-weight: bold;
+  font-family: var(--fonte-text);
+  transition: background-color 0.3s, transform 0.2s;
+}
+  #matri a:hover{
+  color: var(--cinza-claro);
+  text-decoration: underline;
+}
+#menu-topo a {
+font-size: 1.25rem;
+font-family: var(--fonte-text);
+color:#FFFFFF;
+text-decoration: none;
+font-weight: bold;
+}
+#menu-topo a:hover{
+  color: var(--cinza-claro);
+  text-decoration: underline;
+}
+#menu-topo .atual{
+  color: #D00000;
+  text-decoration: underline;
+}
+#topo h2{
+  align-items: center;
+  padding-right: 50px;
+}
+.texto-vermelho{
+  color: #D00000;
+}#info{
+  height: 600px;
+}
+.secao-valores {
+    background-color: var(--vermelho-escuro);
+    color: #FFFFFF;
+    text-align: center center;
+}
+.secao-valores > h2{
+    text-align: center;
+}
+.cards-container {
+    display: flex; 
+}
+.valor-card {
+ text-align: center;
+}
+
+.container {
+  text-align: center;
+  padding: 60px 30px;
+  color: var(--branco);
+  font-family: var(--fonte-text);
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--branco);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+}
+
+.card {
+  background-color: var(--vermelho-escuro);
+  color: var(--branco);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+    text-align: center;
+  font-size: 1.6rem;
+  color: var(--branco);
+  margin-bottom: 10px;
+}
+
+.card h3 {
+    text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--cinza-claro);
+  margin-bottom: 10px;
+}
+
+.card p {
+    text-align: center;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.card strong {
+  color: var(--branco);
+}
+
+
+.card.destaque {
+  border: 3px solid var(--branco);
+}
+
+.botao {
+align-items: center;
+  font-family: var(--fonte-text);
+  background-color: var(--branco);
+  color: var(--vermelho-escuro);
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: var(--preto);
+}

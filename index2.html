@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Matrícula - Global Idiomas</title>
+  <link rel="stylesheet" href=" estilo2.css">
+</head>
+<body>
+      <header id="topo">
+            <div class="conteiner grid-topo   ">
+                <h1><a href="index.html"> <img src="imags/logo.png"></a></h1>
+                <h2>Global Idioma:  <span class="texto-vermelho">sua voz no mundo.</span></h2>
+                <nav id="menu-topo">
+                    <ul>
+                        <li><a href="index.html" class="atual">Início</a></li>
+                        <li><a href="">Sobre Nós</a></li>
+                        <li><a href="">Cursos</a></li>
+                        <li><a href="">Campus</a></li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="index2.html" id="matri">Faça a sua Matricula!</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+  <div class="container2">
+    <form class="formulario">
+      <div class="titulo">
+        <h2>Faça a Sua Matrícula!</h2>
+      </div>
+
+      <h3>Suas Informações:</h3>
+
+      <input type="text" placeholder="*Nome Completo" required>
+      <input type="email" placeholder="*Seu email" required>
+      <input type="tel" maxlength="9" placeholder="*Telefone" required>
+      <input type="text" maxlength="11" placeholder="*Seu CPF" required>
+
+      <div class="duas-colunas">
+        <input type="text" placeholder="*Cidade" required>
+        <input type="text" maxlength="8" placeholder="*Cep" required>
+      </div>
+
+      <div class="duas-colunas">
+        <input type="text" placeholder="*Bairro" required>
+        <input type="text" placeholder="*Logradouro" required>
+      </div>
+
+      <h3>Curso e Campus:</h3>
+      <div class="duas-colunas">
+       <select required>
+            <option value="">Selecione o Campus:</option>
+            <option value="">Brumado - BA</option>
+            <option value="">Maceió - AL</option>
+            <option value="">São Paulo - SP</option>
+            <option value="">Américo Brasiliense - SP</option>
+        </select> 
+        <select required>
+            <option value="">Selecione o Curso:</option>
+            <option value="">Alemão</option>
+            <option value="">Espanhol</option>
+            <option value="">Francês</option>
+            <option value="">Inglês</option>
+        </select>
+       </div>
+        <button type="submit">Enviar Matrícula</button>
+    </form>
+</body>
+</html>
