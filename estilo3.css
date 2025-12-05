@@ -204,7 +204,6 @@ align-items: center;
     gap: 20px;
   }
 
-  /
   .cards{
     grid-template-columns: 1fr;
     gap: 25px;
