@@ -181,3 +181,109 @@ align-items: center;
 .botao:hover {
   background-color: var(--preto);
 }
+
+@media screen and (max-width: 768px){
+
+  .grid-topo{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #topo h2{
+    font-size: 26px;
+    margin-top: 20px;
+    padding-right: 0;
+  }
+
+  #meu-topo{
+    grid-column: 1 / 3;
+    margin-top: 5px;
+  }
+
+  #menu-topo ul{
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /
+  .cards{
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .card{
+    padding: 22px;
+  }
+
+  .container h1{
+    font-size: 1.7rem;
+  }
+}
+
+
+@media screen and (max-width: 425px){
+
+  body{
+    background-size: cover;
+    background-position: center;
+  }
+
+  
+  .grid-topo{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #topo h2{
+    font-size: 22px;
+    margin-top: 15px;
+    padding-right: 0;
+  }
+
+  #menu-topo ul{
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+  }
+
+  #matri{
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+
+  
+  .container{
+    padding: 40px 20px;
+  }
+
+  .container h1{
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+ 
+  .cards{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card{
+    padding: 18px;
+  }
+
+  .card h2{
+    font-size: 1.3rem;
+  }
+
+  .card h3{
+    font-size: 1.05rem;
+  }
+
+  .card p{
+    font-size: 0.95rem;
+  }
+
+  .botao{
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}

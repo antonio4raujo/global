@@ -317,3 +317,158 @@ article#campus p img {
 span{
   color: #FFFFFF;
 }
+
+@media screen and (max-width: 768px){
+
+  .grid-topo{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  #topo h2{
+    font-size: 26px;
+    padding-right: 0;
+    margin-top: 15px;
+  }
+
+  #meu-topo{
+    grid-column: 1 / 3;
+    margin-top: 10px;
+  }
+
+  #menu-topo ul{
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #info{
+    height: auto;
+  }
+
+  #nossoobjetivo h1{
+    font-size: 30px;
+  }
+
+  #nossoobjetivo p{
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .cursos-container{
+    flex-wrap: wrap;
+  }
+
+  .curso{
+    width: 45%;
+  }
+
+  #horarios p{
+    margin: 10px 0;
+    display: block;
+  }
+
+  #horarios p:last-child::before{
+    display: none;
+  }
+
+  #contato-redes{
+    grid-template-columns: 1fr;
+  }
+
+  #redes{
+    border-left: none;
+    border-top: 2px solid #fff;
+    margin-top: 20px;
+  }
+
+  article#campus p{
+    width: 90%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 425px){
+
+  .grid-topo{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #topo h2{
+    grid-column: auto;
+    margin-top: 10px;
+    font-size: 22px;
+  }
+
+  #menu-topo ul{
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 0;
+  }
+
+  #matri{
+    padding: 10px 25px;
+    font-size: 0.9em;
+  }
+
+  #nossoobjetivo{
+    padding: 25px 15px;
+  }
+  #nossoobjetivo h1{
+    font-size: 26px;
+  }
+  #nossoobjetivo p{
+    width: 95%;
+    font-size: 16px;
+  }
+
+  #cursos h2{
+    font-size: 1.6em;
+  }
+  .curso{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #horarios > h1{
+    font-size: 1.4em;
+  }
+  #horarios p{
+    font-size: 1em;
+  }
+
+  #contato-redes{
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  #contatos, #redes{
+    padding: 25px;
+    text-align: center;
+  }
+
+  .linha{
+    justify-content: center;
+    font-size: 1.1em;
+  }
+  .linha img{
+    width: 32px;
+    height: 32px;
+  }
+
+  #sobrenos h1{
+    font-size: 28px;
+  }
+  #sobrenos p{
+    font-size: 16px;
+    width: 90%;
+  }
+
+  article#campus h1{
+    font-size: 28px;
+  }
+  article#campus p{
+    width: 95%;
+    font-size: 15px;
+  }
+}
